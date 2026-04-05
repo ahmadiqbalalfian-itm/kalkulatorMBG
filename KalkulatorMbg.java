@@ -9,8 +9,10 @@ public class KalkulatorMbg {
         System.out.print("Berapa nilainya " + konversi + " Anda ?\t\t: ");
         long nilai = fira.nextLong();
         double hMBG = nilai/1200_000_000_000.0;
-        if (hMBG>=1){
-            System.out.println(konversi + "anda setara dengan " + hMBG + " hari MBG");
+        if (hMBG/7>){
+            System.out.println(konversi + "anda setara dengan " + hMBG/7 + " minggu MBG"); 
+        } else if(hMBG>=1){
+            System.out.println(konversi + "anda setara dengan " + hMBG + " hari MBG"); 
         } else if(hMBG*24>=1){
             System.out.println(konversi + "anda setara dengan " + hMBG*24 + " jam MBG");
         } else if(hMBG*1440>=1){
